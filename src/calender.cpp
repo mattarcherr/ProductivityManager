@@ -151,13 +151,29 @@ int MainWindow::fillCalender()
     ui->day6w4->setText((dayMap[5]+"\n"+month+" 27"));
     ui->day7w4->setText((dayMap[6]+"\n"+month+" 28"));
 
-    ui->day1w5->setText((dayMap[0]+"\n"+month+" 29"));
-    ui->day2w5->setText((dayMap[1]+"\n"+month+" 30"));
-    ui->day3w5->setText((dayMap[2]+"\n"+month+" 01"));
-    ui->day4w5->setText((dayMap[3]+"\n"+month+" 01"));
-    ui->day5w5->setText((dayMap[4]+"\n"+month+" 01"));
-    ui->day6w5->setText((dayMap[5]+"\n"+month+" 01"));
-    ui->day7w5->setText((dayMap[6]+"\n"+month+" 01"));
+    // feburary ( leap year still needed )
+    if (month == "FEB"){
+        ui->day1w5->setText((""));
+        ui->day2w5->setText((""));
+    }
+    else {
+        ui->day1w5->setText((dayMap[0]+"\n"+month+" 29"));
+        ui->day2w5->setText((dayMap[1]+"\n"+month+" 30"));
+    }
+
+    // fill text for 31st if needed and fill remaining squares
+//    std::string longMonths[7] = {"JAN","MAR","MAY","JUL","AUG","OCT","DEC"};
+    if (month == "JAN" || month == "MAR" || month == "MAY" || month == "JUL" || month == "AUG" || month == "OCT" || month == "DEC") {
+        ui->day3w5->setText((dayMap[2]+"\n"+month+" 31"));
+    }
+    else {
+        ui->day3w5->setText((""));
+        ui->day3w5->setEnabled(0);
+    }
+    ui->day4w5->setText((""));
+    ui->day5w5->setText((""));
+    ui->day6w5->setText((""));
+    ui->day7w5->setText((""));
 
     // Highlight current day
     switch (systemDay){
