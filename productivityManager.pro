@@ -9,14 +9,18 @@ CONFIG += c++20 console
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    src/altertasksdialog.cpp \
     src/calender.cpp \
     src/main.cpp \
-    src/mainwindow.cpp
+    src/mainwindow.cpp \
+    src/tasks.cpp
 
 HEADERS += \
+    src/altertasksdialog.h \
     src/mainwindow.h
 
 FORMS += \
+    src/ui/altertasksdialog.ui \
     src/ui/mainwindow.ui
 
 # Default rules for deployment.

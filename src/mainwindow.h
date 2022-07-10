@@ -21,7 +21,14 @@ public:
     int fillCalender();
 
     // notes
+
+    // Tasks
+    int addTask();
     ~MainWindow();
+
+private slots:
+    void on_addItemButton_clicked();
+    void refreshTasks();
 
 private:
     int systemMonth;

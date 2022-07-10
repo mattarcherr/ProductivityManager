@@ -34,7 +34,7 @@ std::map<int , QString> getDayMap(int day, int weekDay)
         {6 , "SATURDAY" },
         {0 , "SUNDAY" },
     };  return dayMap; }
-    else if (weekDay == 1) {
+    else if (weekDay == 6) {
     std::map<int , QString> dayMap {
         {2 , "MONDAY" },
         {3 , "TUESDAY" },
@@ -44,7 +44,7 @@ std::map<int , QString> getDayMap(int day, int weekDay)
         {0 , "SATURDAY" },
         {1 , "SUNDAY" },
     };  return dayMap; }
-    else if (weekDay == 2){
+    else if (weekDay == 5){
     std::map<int , QString> dayMap {
         {3 , "MONDAY" },
         {4, "TUESDAY" },
@@ -54,7 +54,7 @@ std::map<int , QString> getDayMap(int day, int weekDay)
         {1 , "SATURDAY" },
         {2 , "SUNDAY" },
     };  return dayMap; }
-    else if (weekDay == 3){
+    else if (weekDay == 4){
     std::map<int , QString> dayMap {
         {4 , "MONDAY" },
         {5 , "TUESDAY" },
@@ -64,7 +64,7 @@ std::map<int , QString> getDayMap(int day, int weekDay)
         {2 , "SATURDAY" },
         {3 , "SUNDAY" },
     };  return dayMap; }
-    else if (weekDay == 4){
+    else if (weekDay == 3){
     std::map<int , QString> dayMap {
         {5 , "MONDAY" },
         {6 , "TUESDAY" },
@@ -74,7 +74,7 @@ std::map<int , QString> getDayMap(int day, int weekDay)
         {3 , "SATURDAY" },
         {4 , "SUNDAY" },
     };  return dayMap; }
-    else if (weekDay == 5){
+    else if (weekDay == 2){
     std::map<int , QString> dayMap {
         {6 , "MONDAY" },
         {0 , "TUESDAY" },
@@ -84,7 +84,7 @@ std::map<int , QString> getDayMap(int day, int weekDay)
         {4 , "SATURDAY" },
         {5 , "SUNDAY" },
     };  return dayMap; }
-    else if (weekDay == 6){
+    else if (weekDay == 1){
     std::map<int , QString> dayMap {
         {0 , "MONDAY" },
         {1 , "TUESDAY" },
