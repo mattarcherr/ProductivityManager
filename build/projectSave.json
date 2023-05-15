@@ -1,0 +1,23 @@
+[
+    {
+        "desc": "test",
+        "endDate": "30/04/2023",
+        "milestones": [
+            {
+                "date": "5/04/2023",
+                "desc": "test milestone",
+                "title": "Milestone 1"
+            }
+        ],
+        "startDate": "1/04/2023",
+        "title": "Test Project"
+    },
+    {
+        "desc": "bdfgbh",
+        "endDate": "fbdgh",
+        "milestones": {
+        },
+        "startDate": "bdfg",
+        "title": "nbfdgh"
+    }
+]

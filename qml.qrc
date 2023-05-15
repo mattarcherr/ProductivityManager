@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ui/ColourScheme/DarkTheme.qml</file>
+        <file>ui/ColourScheme/LightTheme.qml</file>
+        <file>ui/TopBar/TopBar.qml</file>
+        <file>ui/Pages/HomePage/HomePage.qml</file>
+        <file>ui/Pages/ToDoListPage/ToDoListPage.qml</file>
+        <file>ui/NewWindow/NewWindow.qml</file>
+        <file>ui/NewWindow/NewToDoList.qml</file>
+        <file>ui/Pages/RSSPage/RSSPage.qml</file>
+        <file>ui/NewWindow/NewRSSEntry.qml</file>
+        <file>ui/NewWindow/TopBarNew.qml</file>
+        <file>ui/NewWindow/NewCalendarEntry.qml</file>
+        <file>ui/NewWindow/NewProject.qml</file>
+        <file>ui/NewWindow/NewProject(EditTimeline).qml</file>
+        <file>ui/Pages/ProjectPage/ProjectPage.qml</file>
+        <file>ui/Pages/ProjectPage/ProjectPage(view).qml</file>
+        <file>ui/Pages/CalendarPage/CalendarPage.qml</file>
+        <file>ui/Pages/CalendarPage/MonthGridDelegate.qml</file>
+        <file>ui/Pages/CalendarPage/SchedulerPage.qml</file>
+        <file>ui/NewWindow/NewCalendarEntry(view).qml</file>
+    </qresource>
+</RCC>

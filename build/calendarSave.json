@@ -1,0 +1,64 @@
+[
+    {
+        "date": "9/04/2023",
+        "desc": "Repeating event for - Repeating Event",
+        "title": "Repeating End",
+        "type": "repeating"
+    },
+    {
+        "date": "16/04/2023",
+        "desc": "Repeating event for - Repeating Event",
+        "title": "Repeating End",
+        "type": "repeating"
+    },
+    {
+        "date": "23/04/2023",
+        "desc": "Repeating event for - Repeating Event",
+        "title": "Repeating End",
+        "type": "repeating"
+    },
+    {
+        "desc": "test",
+        "endDate": "30/04/2023",
+        "period": 7,
+        "startDate": "2/04/2023",
+        "title": "Repeating Event",
+        "type": "repeating"
+    },
+    {
+        "date": "30/04/2023",
+        "desc": "End date for repeating event - Repeating Event",
+        "title": "Repeating End",
+        "type": "repeating"
+    },
+    {
+        "date": "1/04/2023",
+        "desc": "Start date for the project - Test Project",
+        "title": "Project Start",
+        "type": "project"
+    },
+    {
+        "date": "30/04/2023",
+        "desc": "End date for the project - Test Project",
+        "title": "Project End",
+        "type": "project"
+    },
+    {
+        "date": "5/04/2023",
+        "desc": "Milestone deadlne - Milestone 1",
+        "title": "Project Milestone - Milestone 1",
+        "type": "project"
+    },
+    {
+        "date": "bdfg",
+        "desc": "Start date for the project - nbfdgh",
+        "title": "Project Start",
+        "type": "project"
+    },
+    {
+        "date": "fbdgh",
+        "desc": "End date for the project - nbfdgh",
+        "title": "Project End",
+        "type": "project"
+    }
+]

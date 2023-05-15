@@ -1,0 +1,16 @@
+[
+    {
+        "desc": "Sample description for a repeating event",
+        "endDate": "09/09/2009",
+        "period": "Week",
+        "startDate": "01/01/2001",
+        "title": "RepeatingEvent",
+        "type": "repeating"
+    },
+    {
+        "date": "01/01/2001",
+        "desc": "sample description for a single event",
+        "title": "SingleEvent",
+        "type": "single"
+    }
+]

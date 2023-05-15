@@ -1,0 +1,157 @@
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+
+import FileIO 1.0
+
+Item {
+
+    property var titleField
+    property var linkField
+
+    FileIO {
+        id: file
+        source: "rssEntriesSave.json"
+        onError: (msg) => console.log(msg)
+    }
+
+    ListModel { id: entriesModel }
+
+
+    Timer {
+        id: timer
+    } function delay(delayTime,cb) {
+        timer.interval = delayTime;
+        timer.repeat = false;
+        timer.triggered.connect(cb);
+        timer.start();
+    }
+
+
+    Rectangle {
+        id: right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        width: parent.width / 2
+        color: palette.window
+
+        Column {
+            anchors.centerIn: parent
+            spacing: 10
+            Text {
+                text: "Enter title"
+                color: palette.text
+            }
+            TextField {
+                id: titleEntry
+                placeholderText: "Title"
+            }
+            Text {
+                text: "Enter date"
+                color: palette.text
+            }
+            TextField {
+                id: linkEntry
+                placeholderText: "Date"
+            }
+            Button {
+                text: "Add"
+                onClicked: func => {
+                               titleField = titleEntry.text
+                               linkField = linkEntry.text
+
+                               titleEntry.clear()
+                               linkEntry.clear()
+
+                               addEntry()
+                           }
+            }
+            Text {
+                id: addedFlag
+                text: ""
+                visible: false
+            }
+        }
+    }
+
+    Rectangle {
+        id: left
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.right: parent.right
+        width: parent.width / 2
+        color: palette.window
+
+        Column {
+            anchors.centerIn: parent
+            spacing: 10
+            Text {
+                text: "Enter title"
+                color: palette.text
+            }
+            TextField {
+                id: titleEntry2
+                placeholderText: "Title"
+            }
+            Text {
+                text: "Enter start date"
+                color: palette.text
+            TextField {
+                id: linkEntry2
+                placeholderText: "Start Date"
+            }
+            Text {
+                text: "Enter end date"
+                color: palette.text
+            }
+            TextField {
+                id: linkEntry3
+                placeholderText: "End Date"
+            }
+            Text {
+                text: "Enter Repeating Period"
+                color: palette.text
+            }
+            TextField {
+                id: linkEntry4
+                placeholderText: "Every Week"
+            }
+            Button {
+                text: "Add"
+                onClicked: func => {
+                               titleField = titleEntry.text
+                               linkField = linkEntry.text
+
+                               titleEntry.clear()
+                               linkEntry.clear()
+
+                               addEntry()
+                           }
+            }
+            Text {
+                id: addedFlag2
+                color: palette.text
+                text: ""
+                visible: false
+            }
+        }
+    }
+
+
+
+    Component.onCompleted: func => {
+                               var entries = file.read()
+                               for (var i = 0; i < file.size(); i++)
+                               {
+                                   entriesModel.append(entries[i])
+                               }
+                           }
+
+    function addEntry(){
+        var obj = {title: titleField, link: linkField}
+        file.add(obj)
+        entriesModel.append({title: titleField, link: linkField})
+    }
+
+}
+}
